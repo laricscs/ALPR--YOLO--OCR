@@ -1,0 +1,101 @@
+
+# ==========================================
+# 1. AMBIENTE PYTHON
+# ==========================================
+
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ==========================================
+# 2. SEGREDOS E CONFIGURAÇÕES PRIVADAS
+# ==========================================
+
+.env
+.env.*
+!.env.example
+
+# ==========================================
+# 3. MODELOS YOLO
+# Manter apenas o best.pt do modelo principal
+# ==========================================
+
+meus_modelos/*
+!meus_modelos/alpr_yolov8n/
+
+meus_modelos/alpr_yolov8n/*
+!meus_modelos/alpr_yolov8n/weights/
+
+meus_modelos/alpr_yolov8n/weights/*
+!meus_modelos/alpr_yolov8n/weights/best.pt
+
+# Ignorar checkpoints de treinamento
+last.pt
+*.onnx
+*.engine
+*.torchscript
+
+# ==========================================
+# 4. DATASETS E IMAGENS DE TESTE
+# ==========================================
+
+datasets/
+LicensePlate_OneClass/
+imagens_test/
+
+# ==========================================
+# 5. VÍDEOS
+# ==========================================
+
+video/
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# ==========================================
+# 6. RESULTADOS
+# Manter gráficos e imagens em results/
+# ==========================================
+
+# A pasta results/ NÃO deve ser ignorada.
+# Seus gráficos e imagens poderão ser publicados.
+
+# ==========================================
+# 7. PYTHON E FERRAMENTAS
+# ==========================================
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ==========================================
+# 8. JUPYTER NOTEBOOK
+# Manter yolo.ipynb e ignorar checkpoints
+# ==========================================
+
+.ipynb_checkpoints/
+
+# ==========================================
+# 9. EDITOR E SISTEMA OPERACIONAL
+# ==========================================
+
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==========================================
+# 10. LOGS E ARQUIVOS TEMPORÁRIOS
+# ==========================================
+
+*.log
+*.tmp
+
+*.temp
