@@ -16,7 +16,7 @@ O projeto integra técnicas de visão computacional e reconhecimento óptico de 
 
 <!-- Substitua pelo nome do segundo GIF salvo na pasta results/ -->
 
-![Demonstração 2 — Pipeline ALPR em funcionamento](results/ALPR_car_GIF.gif)
+![Demonstração 2 — Pipeline ALPR em funcionamento](results/Alpr_car_GIF.gif)
 
 ### 3. Resultado da validação do modelo
 
@@ -145,13 +145,6 @@ jupyter notebook yolo.ipynb
 
 > Os comandos e as dependências deverão ser ajustados conforme a implementação final do notebook e do script de inferência.
 
-## Próximos passos
-
-- Aprimorar o reconhecimento de caracteres visualmente semelhantes, como `M` e `N`.
-- Avaliar o desempenho em diferentes condições de iluminação, ângulos e resoluções.
-- Implementar métricas específicas para a leitura completa da placa.
-- Organizar o pipeline em módulos reutilizáveis.
-- Disponibilizar a inferência por meio de uma API.
 
 ## Autora
 
